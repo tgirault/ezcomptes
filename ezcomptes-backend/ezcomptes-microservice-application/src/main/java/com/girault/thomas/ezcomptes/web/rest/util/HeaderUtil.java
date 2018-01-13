@@ -11,15 +11,15 @@ public final class HeaderUtil {
 
     private static final Logger log = LoggerFactory.getLogger(HeaderUtil.class);
 
-    private static final String APPLICATION_NAME = "ezcomptesApp";
+    private static final String APPLICATION_NAME = "ezcomptesMicroserviceApplicationApp";
 
     private HeaderUtil() {
     }
 
     public static HttpHeaders createAlert(String message, String param) {
         HttpHeaders headers = new HttpHeaders();
-        headers.add("X-ezcomptesApp-alert", message);
-        headers.add("X-ezcomptesApp-params", param);
+        headers.add("X-ezcomptesMicroserviceApplicationApp-alert", message);
+        headers.add("X-ezcomptesMicroserviceApplicationApp-params", param);
         return headers;
     }
 
@@ -38,8 +38,8 @@ public final class HeaderUtil {
     public static HttpHeaders createFailureAlert(String entityName, String errorKey, String defaultMessage) {
         log.error("Entity processing failed, {}", defaultMessage);
         HttpHeaders headers = new HttpHeaders();
-        headers.add("X-ezcomptesApp-error", "error." + errorKey);
-        headers.add("X-ezcomptesApp-params", entityName);
+        headers.add("X-ezcomptesMicroserviceApplicationApp-error", "error." + errorKey);
+        headers.add("X-ezcomptesMicroserviceApplicationApp-params", entityName);
         return headers;
     }
 }

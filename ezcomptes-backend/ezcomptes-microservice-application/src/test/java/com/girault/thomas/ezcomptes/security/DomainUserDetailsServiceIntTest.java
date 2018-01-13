@@ -1,6 +1,6 @@
 package com.girault.thomas.ezcomptes.security;
 
-import com.girault.thomas.ezcomptes.EzcomptesApp;
+import com.girault.thomas.ezcomptes.EzcomptesMicroserviceApplicationApp;
 import com.girault.thomas.ezcomptes.domain.User;
 import com.girault.thomas.ezcomptes.repository.UserRepository;
 
@@ -25,7 +25,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  * @see DomainUserDetailsService
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = EzcomptesApp.class)
+@SpringBootTest(classes = EzcomptesMicroserviceApplicationApp.class)
 @Transactional
 public class DomainUserDetailsServiceIntTest {
 

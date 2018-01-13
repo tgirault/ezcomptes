@@ -1,11 +1,11 @@
 version: '2'
 services:
-    ezcomptes-postgresql:
+    ezcomptesmicroserviceapplication-postgresql:
         image: postgres:9.6.5
         # volumes:
-        #     - ~/volumes/jhipster/ezcomptes/postgresql/:/var/lib/postgresql/data/
+        #     - ~/volumes/jhipster/ezcomptesMicroserviceApplication/postgresql/:/var/lib/postgresql/data/
         environment:
-            - POSTGRES_USER=ezcomptes
+            - POSTGRES_USER=ezcomptesMicroserviceApplication
             - POSTGRES_PASSWORD=
         ports:
             - 5432:5432

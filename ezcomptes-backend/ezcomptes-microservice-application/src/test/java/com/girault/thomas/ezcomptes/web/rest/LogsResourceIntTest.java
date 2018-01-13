@@ -1,6 +1,6 @@
 package com.girault.thomas.ezcomptes.web.rest;
 
-import com.girault.thomas.ezcomptes.EzcomptesApp;
+import com.girault.thomas.ezcomptes.EzcomptesMicroserviceApplicationApp;
 import com.girault.thomas.ezcomptes.web.rest.vm.LoggerVM;
 import ch.qos.logback.classic.AsyncAppender;
 import ch.qos.logback.classic.LoggerContext;
@@ -27,7 +27,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  * @see LogsResource
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = EzcomptesApp.class)
+@SpringBootTest(classes = EzcomptesMicroserviceApplicationApp.class)
 public class LogsResourceIntTest {
 
     private MockMvc restLogsMockMvc;

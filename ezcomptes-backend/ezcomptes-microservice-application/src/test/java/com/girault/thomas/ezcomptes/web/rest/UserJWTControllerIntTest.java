@@ -1,6 +1,6 @@
 package com.girault.thomas.ezcomptes.web.rest;
 
-import com.girault.thomas.ezcomptes.EzcomptesApp;
+import com.girault.thomas.ezcomptes.EzcomptesMicroserviceApplicationApp;
 import com.girault.thomas.ezcomptes.domain.User;
 import com.girault.thomas.ezcomptes.repository.UserRepository;
 import com.girault.thomas.ezcomptes.security.jwt.TokenProvider;
@@ -32,7 +32,7 @@ import static org.hamcrest.Matchers.not;
  * @see UserJWTController
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = EzcomptesApp.class)
+@SpringBootTest(classes = EzcomptesMicroserviceApplicationApp.class)
 public class UserJWTControllerIntTest {
 
     @Autowired

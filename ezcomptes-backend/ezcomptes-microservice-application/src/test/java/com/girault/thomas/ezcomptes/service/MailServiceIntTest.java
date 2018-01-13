@@ -1,7 +1,7 @@
 package com.girault.thomas.ezcomptes.service;
 import com.girault.thomas.ezcomptes.config.Constants;
 
-import com.girault.thomas.ezcomptes.EzcomptesApp;
+import com.girault.thomas.ezcomptes.EzcomptesMicroserviceApplicationApp;
 import com.girault.thomas.ezcomptes.domain.User;
 import io.github.jhipster.config.JHipsterProperties;
 import org.junit.Before;
@@ -30,7 +30,7 @@ import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.*;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = EzcomptesApp.class)
+@SpringBootTest(classes = EzcomptesMicroserviceApplicationApp.class)
 public class MailServiceIntTest {
 
     @Autowired

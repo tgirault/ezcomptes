@@ -5,7 +5,7 @@
       "nativeLanguage": "fr"
     },
     "jhipsterVersion": "4.13.3",
-    "baseName": "ezcomptes",
+    "baseName": "ezcomptesMicroserviceApplication",
     "packageName": "com.girault.thomas.ezcomptes",
     "packageFolder": "com/girault/thomas/ezcomptes",
     "serverPort": "8080",
@@ -17,12 +17,12 @@
     "devDatabaseType": "h2Memory",
     "prodDatabaseType": "postgresql",
     "searchEngine": "elasticsearch",
-    "messageBroker": "kafka",
+    "messageBroker": false,
     "serviceDiscoveryType": "eureka",
     "buildTool": "gradle",
     "enableSocialSignIn": true,
     "enableSwaggerCodegen": true,
-    "jwtSecretKey": "1748a517006c9562cc24941502347b07d7b6139a",
+    "jwtSecretKey": "121568269640d79590356f3bb9c4a2ffea42cc84",
     "enableTranslation": true,
     "nativeLanguage": "fr",
     "languages": [

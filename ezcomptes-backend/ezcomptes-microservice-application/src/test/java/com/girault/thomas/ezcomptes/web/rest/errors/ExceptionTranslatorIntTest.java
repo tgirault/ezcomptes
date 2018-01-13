@@ -1,6 +1,6 @@
 package com.girault.thomas.ezcomptes.web.rest.errors;
 
-import com.girault.thomas.ezcomptes.EzcomptesApp;
+import com.girault.thomas.ezcomptes.EzcomptesMicroserviceApplicationApp;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -25,7 +25,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  * @see ExceptionTranslator
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = EzcomptesApp.class)
+@SpringBootTest(classes = EzcomptesMicroserviceApplicationApp.class)
 public class ExceptionTranslatorIntTest {
 
     @Autowired

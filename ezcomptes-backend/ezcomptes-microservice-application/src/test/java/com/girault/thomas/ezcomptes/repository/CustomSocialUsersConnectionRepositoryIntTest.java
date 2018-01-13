@@ -1,6 +1,6 @@
 package com.girault.thomas.ezcomptes.repository;
 
-import com.girault.thomas.ezcomptes.EzcomptesApp;
+import com.girault.thomas.ezcomptes.EzcomptesMicroserviceApplicationApp;
 import com.girault.thomas.ezcomptes.domain.SocialUserConnection;
 
 import org.junit.Before;
@@ -30,7 +30,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.Assert.*;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = EzcomptesApp.class)
+@SpringBootTest(classes = EzcomptesMicroserviceApplicationApp.class)
 @Transactional
 public class CustomSocialUsersConnectionRepositoryIntTest {
 

@@ -1,4 +1,4 @@
-# ezcomptes
+# ezcomptesMicroserviceApplication
 This application was generated using JHipster 4.13.3, you can find documentation and help at [http://www.jhipster.tech/documentation-archive/v4.13.3](http://www.jhipster.tech/documentation-archive/v4.13.3).
 
 ## Development
@@ -25,7 +25,7 @@ Refer to [Doing API-First development][] for more details.
 
 ## Building for production
 
-To optimize the ezcomptes application for production, run:
+To optimize the ezcomptesMicroserviceApplication application for production, run:
 
     ./gradlew -Pprod clean bootRepackage
 

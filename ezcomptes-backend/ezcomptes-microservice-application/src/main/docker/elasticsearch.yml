@@ -1,9 +1,9 @@
 version: '2'
 services:
-    ezcomptes-elasticsearch:
+    ezcomptesmicroserviceapplication-elasticsearch:
         image: elasticsearch:2.4.6
         # volumes:
-        #     - ~/volumes/jhipster/ezcomptes/elasticsearch/:/usr/share/elasticsearch/data/
+        #     - ~/volumes/jhipster/ezcomptesMicroserviceApplication/elasticsearch/:/usr/share/elasticsearch/data/
         ports:
             - 9200:9200
             - 9300:9300

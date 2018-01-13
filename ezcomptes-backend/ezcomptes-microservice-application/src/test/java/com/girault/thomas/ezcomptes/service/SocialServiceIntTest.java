@@ -1,6 +1,6 @@
 package com.girault.thomas.ezcomptes.service;
 
-import com.girault.thomas.ezcomptes.EzcomptesApp;
+import com.girault.thomas.ezcomptes.EzcomptesMicroserviceApplicationApp;
 import com.girault.thomas.ezcomptes.domain.Authority;
 import com.girault.thomas.ezcomptes.domain.User;
 import com.girault.thomas.ezcomptes.repository.AuthorityRepository;
@@ -29,7 +29,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.*;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = EzcomptesApp.class)
+@SpringBootTest(classes = EzcomptesMicroserviceApplicationApp.class)
 @Transactional
 public class SocialServiceIntTest {
 

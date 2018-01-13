@@ -1,7 +1,7 @@
 package com.girault.thomas.ezcomptes.web.rest;
 
 import com.girault.thomas.ezcomptes.config.Constants;
-import com.girault.thomas.ezcomptes.EzcomptesApp;
+import com.girault.thomas.ezcomptes.EzcomptesMicroserviceApplicationApp;
 import com.girault.thomas.ezcomptes.domain.Authority;
 import com.girault.thomas.ezcomptes.domain.User;
 import com.girault.thomas.ezcomptes.repository.AuthorityRepository;
@@ -49,7 +49,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  * @see AccountResource
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = EzcomptesApp.class)
+@SpringBootTest(classes = EzcomptesMicroserviceApplicationApp.class)
 public class AccountResourceIntTest {
 
     @Autowired

@@ -51,7 +51,7 @@ version = '0.0.1-SNAPSHOT'
 description = ''
 
 bootRepackage {
-   mainClass = 'com.girault.thomas.ezcomptes.EzcomptesApp'
+   mainClass = 'com.girault.thomas.ezcomptes.EzcomptesMicroserviceApplicationApp'
 }
 
 war {
@@ -59,7 +59,7 @@ war {
 }
 
 springBoot {
-    mainClass = 'com.girault.thomas.ezcomptes.EzcomptesApp'
+    mainClass = 'com.girault.thomas.ezcomptes.EzcomptesMicroserviceApplicationApp'
     executable = true
     buildInfo()
 }
@@ -183,9 +183,6 @@ dependencies {
     // needed to get around elasticsearch stacktrace about jna not found
     // https://github.com/elastic/elasticsearch/issues/13245
     compile "net.java.dev.jna:jna"
-    compile "org.springframework.cloud:spring-cloud-stream"
-    compile "org.springframework.cloud:spring-cloud-stream-binder-kafka"
-    compile "org.springframework.kafka:spring-kafka"
     compile "org.springframework.boot:spring-boot-starter-security"
     compile ("org.springframework.boot:spring-boot-starter-web") {
         exclude module: 'spring-boot-starter-tomcat'
@@ -225,7 +222,6 @@ dependencies {
     testCompile "org.mockito:mockito-core"
     testCompile "com.mattbertolini:liquibase-slf4j"
     testCompile "org.hamcrest:hamcrest-library"
-    testCompile "org.springframework.cloud:spring-cloud-stream-test-support"
     optional ("org.springframework.boot:spring-boot-configuration-processor") {
         exclude group: 'com.vaadin.external.google', module: 'android-json'
     }
