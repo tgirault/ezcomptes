@@ -23,7 +23,7 @@ eureka:
     instance:
         prefer-ip-address: true
     client:
-        enabled: false # By default, the JHipster Registry is not used in the "dev" profile
+        enabled: true # By default, the JHipster Registry is not used in the "dev" profile
         service-url:
             defaultZone: http://admin:admin@localhost:8761/eureka/
 
@@ -45,7 +45,7 @@ spring:
         password:
     h2:
         console:
-            enabled: false
+            enabled: true
     jpa:
         database-platform: io.github.jhipster.domain.util.FixedH2Dialect
         database: H2
@@ -104,7 +104,7 @@ liquibase:
 #        key-alias: ezcomptesMicroserviceApplication
 # ===================================================================
 server:
-    port: 8080
+    port: 8081
 
 # ===================================================================
 # JHipster specific properties
@@ -140,7 +140,7 @@ jhipster:
                 token-validity-in-seconds-for-remember-me: 2592000
     mail: # specific JHipster mail property, for standard properties see MailProperties
         from: ezcomptesMicroserviceApplication@localhost
-        base-url: http://127.0.0.1:8080
+        base-url: http://127.0.0.1:8081
     metrics: # DropWizard Metrics configuration, used by MetricsConfiguration
         jmx.enabled: true
         graphite: # Use the "graphite" Maven profile to have the Graphite dependencies
