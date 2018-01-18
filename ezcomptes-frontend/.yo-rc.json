@@ -1,0 +1,43 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.girault.thomas.ezcomptes",
+      "nativeLanguage": "fr"
+    },
+    "jhipsterVersion": "4.13.3",
+    "baseName": "ezcomptesFrontend",
+    "packageName": "com.girault.thomas.ezcomptes",
+    "packageFolder": "com/girault/thomas/ezcomptes",
+    "serverPort": "8081",
+    "authenticationType": "uaa",
+    "uaaBaseName": "ezcomptesMicroserviceUaaServer",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": false,
+    "websocket": "spring-websocket",
+    "databaseType": "no",
+    "devDatabaseType": "no",
+    "prodDatabaseType": "no",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "gradle",
+    "enableSocialSignIn": false,
+    "enableSwaggerCodegen": true,
+    "clientFramework": "angularX",
+    "useSass": true,
+    "clientPackageManager": "yarn",
+    "applicationType": "gateway",
+    "testFrameworks": [
+      "gatling",
+      "cucumber",
+      "protractor"
+    ],
+    "jhiPrefix": "jhi",
+    "enableTranslation": true,
+    "nativeLanguage": "fr",
+    "languages": [
+      "fr",
+      "en"
+    ]
+  }
+}
