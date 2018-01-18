@@ -6,7 +6,7 @@
 
     <div class="apps col-md-5" *ngIf="data">
         <ul class="list-group">
-            <li class="list-group-item {{app.active}}" *ngFor="let app of data.applications | orderBy:name" (click)="show(app.name)">
+            <li class="list-group-item {{app.active}}" *ngFor="let app of data.applications | orderBy:app.name" (click)="show(app.name)">
                 <span class="fa fa-alert" *ngIf="(app.instances | filter:{status:'UP'}).length < app.instances.length">&nbsp;</span> {{app.name}}
                 <span class="badge badge-pill font-weight-normal badge-info">{{(app.instances | filter:{status:'UP'}).length}} / {{app.instances.length}}</span>
             </li>
